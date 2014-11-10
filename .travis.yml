@@ -1,2 +1,4 @@
 before_script:
   - sudo apt-get install pandoc texlive-base
+
+script: Make

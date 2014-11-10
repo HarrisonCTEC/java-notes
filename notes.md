@@ -24,9 +24,9 @@ title: Java Notes
 
 ~~~~~~~~~~~~~~~~{.java}
 
-if (myList.size() > 0) &&
+if (myList.size() > 0 && someList.size() <= someInt) 
 {
-  myList.remove;
+  myList.remove(someInt);
 }
 
 ~~~~~~~~~~~~~~~~~~~~~~~
