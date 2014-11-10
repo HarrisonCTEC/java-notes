@@ -13,3 +13,4 @@ deploy:
   file: notes.pdf
   on:
     tags: true
+    all_branches: true
