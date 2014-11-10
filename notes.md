@@ -22,14 +22,12 @@ title: Java Notes
 
 # ArrayList
 
-~~~~~~~~~~~~~~~~{.java}
-
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~{.java}
 if (myList.size() > 0 && someList.size() <= someInt)
 {
   myList.remove(someInt);
 }
-
-~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 * When removing from a list you must manually adjust your count.
 
