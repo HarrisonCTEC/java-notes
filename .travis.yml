@@ -5,6 +5,9 @@ install:
 - sudo apt-get install pandoc texlive
 script: make
 
+before_script:
+- pandoc -v
+
 deploy:
   provider: releases
   skip_cleanup: true
