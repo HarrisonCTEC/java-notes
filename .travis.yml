@@ -12,4 +12,4 @@ deploy:
     secure: GCdvpv99K+v9fC+8nsYqIc+CoHvQBupavQKyDA2qv/qVQ+StJvE58gkAyZxsa+U8p5L00bigqShtpgvyoGnZlPvPB71SHhrnx5GM0cy3UuP8EoRqvzqpVb7/mSwTfEBKR5LkJUqIYYEhoiUsXoGjETsVk69E2O16dz03UXMk/PI=
   file: notes.pdf
   on:
-    repo: HarrisonCTEC/java-notes
+    tags: true
