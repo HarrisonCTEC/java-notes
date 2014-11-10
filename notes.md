@@ -5,32 +5,34 @@ title: Java Notes
 ...
 
 # Chatbot
-- Say Hello
-- Prompt user for input
+* Say Hello
+* Prompt user for input
 
 # Strings
-- Text
-- .length()
-- .SubString(int)
-- .SubString(int, int)
+* Text
+* `.length()`
+* `.SubString(int)`
+* `.SubString(int, int)`
 
 # Class
-- A class is the blueprint for an object.
+* A class is the blueprint for an object.
 
 # Constructor
-- Initializes data members.
+* Initializes data members.
 
 # ArrayList
 
 ~~~~~~~~~~~~~~~~{.java}
 
-if (myList.size() > 0 && someList.size() <= someInt) 
+if (myList.size() > 0 && someList.size() <= someInt)
 {
   myList.remove(someInt);
 }
 
 ~~~~~~~~~~~~~~~~~~~~~~~
 
+* When removing from a list you must manually adjust your count.
+
 # &&
-- Logical OR
-- Short circuit evaluation
+* Logical OR
+* Short circuit evaluation
