@@ -1,9 +1,9 @@
 install:
 - sudo apt-get update
-- sudo apt-get install cabal-install texlive
-- cabal sandbox init
-- cabal update
-- cabal install install -j --disable-documentation -fhttps pandoc
+- sudo apt-get install texlive
+- ruby -e "$(wget -O- https://raw.github.com/Homebrew/linuxbrew/go/install)"
+- brew update
+- brew install pandoc
 
 script: make
 
