@@ -34,3 +34,32 @@ if (myList.size() > 0 && someList.size() <= someInt)
 # &&
 * Logical OR
 * Short circuit evaluation
+
+# Static Method
+* `Uri.parse()`
+* Private constructor
+* Not object oriented
+
+# Listener
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~{.java}
+toggleButton.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener()
+	{
+		@Override
+		public void onCheckedChanged(CompoundButton buttonView, boolean isChecked)
+		{
+			if (isChecked)
+			{
+				soundPlayer.start();
+			}
+			else
+			{
+				soundPlayer.pause();
+			}
+		}
+	});
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+# Implements
+* `public class SoundActivity extends Activity impelments runnable`
+* Must implement all methods
