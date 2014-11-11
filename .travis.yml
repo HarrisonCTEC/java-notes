@@ -1,11 +1,9 @@
-before_install:
-- sudo apt-get update
-
 install:
-- sudo apt-get install haskell-platform texlive
+- sudo apt-get update
+- sudo apt-get install cabal-install texlive
+- cable sandbox init
 - cabal update
-- cabal install http-client
-- cabal install pandoc
+- cabal install install -j --disable-documentation -fhttps pandoc
 
 script: make
 
