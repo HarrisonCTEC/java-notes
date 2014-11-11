@@ -2,7 +2,9 @@ before_install:
 - sudo apt-get update
 
 install:
-- sudo apt-get install pandoc texlive
+- sudo apt-get install haskell-platform texlive
+- cabal install pandoc
+
 script: make
 
 before_script:
