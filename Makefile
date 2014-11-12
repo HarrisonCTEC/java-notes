@@ -1,3 +1,3 @@
 all: pdf
 
-pdf: ; pandoc notes.md -o notes.pdf
+pdf: ; pandoc notes.md -V geometry:"margin=1in" -o notes.pdf
