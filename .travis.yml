@@ -5,7 +5,7 @@ install:
 - tar xvf 1.13.1.tar.gz
 - cd pandoc-1.13.1
 - cabal update
-- cabal install -only-dependencies pandoc
+- cabal install --only-dependencies pandoc
 - cabal install
 
 before_script:
