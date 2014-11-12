@@ -1,9 +1,9 @@
 install:
 - sudo apt-get update
 - sudo apt-get install haskell-platform texlive
-- wget "https://github.com/jgm/pandoc/archive/1.13.1.tar.gz"
-- tar xvf 1.13.1.tar.gz
+- git clone "https://github.com/jgm/pandoc.git"
 - cd pandoc-1.13.1
+- git submodule update --init data/templates/
 - cabal update
 - cabal install --only-dependencies pandoc
 - cabal install
