@@ -8,6 +8,7 @@ install:
 - cabal install --only-dependencies pandoc
 - cabal install
 - PATH=$HOME/.cabal/bin:$PATH
+- cd ..
 
 before_script:
 - pandoc -v
