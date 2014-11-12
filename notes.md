@@ -64,3 +64,20 @@ toggleButton.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListen
 # Implements
 * `public class SoundActivity extends Activity impelments runnable`
 * Must implement all methods
+
+# Arrays
+## The hipster of code
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~{.java}
+private int [] myScores;
+myScores = new int [5];
+myScores[0] = 1111117;
+int temp = myScores[0];
+myScores.length; // 5
+
+String [] myWords;
+myWords = new String [10];
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+* Array size required in advance
+* Inline deceleration `int [] scores = {17, 101, 39, 45, 3};`
