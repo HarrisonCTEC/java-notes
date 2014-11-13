@@ -38,7 +38,7 @@ if (myList.size() > 0 && someList.size() <= someInt)
 
 
 # &&
-* Logical OR
+* Logical AND
 * Short circuit evaluation
 * If the first test is false it won't look at the second.
 
