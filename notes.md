@@ -91,3 +91,8 @@ myWords = new String [10];
 
 * Array size required in advance
 * Inline deceleration `int [] scores = {17, 101, 39, 45, 3};`
+
+
+# Declaration
+* Create a new empty variable: `Type [] Variable;`
+* Make a copy of an object with a constructor: `Variable = New Type Length;`
