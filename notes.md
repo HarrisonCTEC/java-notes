@@ -96,4 +96,4 @@ myWords = new String [10];
 # Declaration
 * Create a new empty variable: `Type [] Variable;`
 * Make a copy of an object with a constructor: `Variable = New Type Length;`
-* Doesn't need to declare all variables, only ones that all methods in the class needs.
+* Doesn't need to declare all variables, only ones that all methods in the class needs. *Method variables can only be seen in their method*
