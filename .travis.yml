@@ -1,6 +1,6 @@
 install:
 - sudo apt-get update
-- sudo apt-get install haskell-platform texlive
+- sudo apt-get install haskell-platform texlive-xetex
 - git clone "https://github.com/jgm/pandoc.git"
 - cd pandoc
 - git submodule update --init data/templates/
