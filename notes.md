@@ -10,11 +10,21 @@ title: Java Notes
 * Prompt user for input
 
 
-# Strings
+# [Strings](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)
 * Text
-* `.length()`
-* `.SubString(int)`
-* `.SubString(int, int)`
+* [`.length()`](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html#length%28%29)
+* [`.SubString(int)`](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html#substring%28int%29)
+* [`.SubString(int, int)`](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html#substring%28int,%20int%29)
+* [`.indexOf(String)`](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html#indexOf%28int%29)
+
+~~~~~~~~~~~~~~~~~~~(.java)
+String test = "me";
+String other = "meething";
+String other2 = "blah";
+
+other.indexOf(test); // 0
+other2.indexOf(test); // -1
+~~~~~~~~~~~~~~~~~~~
 
 
 # Class
