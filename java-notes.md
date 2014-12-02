@@ -17,14 +17,14 @@ title: Java Notes
 * [`.SubString(int, int)`](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html#substring%28int,%20int%29)
 * [`.indexOf(String)`](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html#indexOf%28int%29)
 
-~~~~~~~~~~~~~~~~~~~(.java)
+```java
 String test = "me";
 String other = "meething";
 String other2 = "blah";
 
 other.indexOf(test); // 0
 other2.indexOf(test); // -1
-~~~~~~~~~~~~~~~~~~~
+```
 
 
 # Class
@@ -37,12 +37,12 @@ other2.indexOf(test); // -1
 
 # ArrayList
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~{.java}
+```java
 if (myList.size() > 0 && someList.size() <= someInt)
 {
   myList.remove(someInt);
 }
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+```
 
 * When removing from a list you must manually adjust your count.
 
@@ -61,7 +61,7 @@ if (myList.size() > 0 && someList.size() <= someInt)
 
 # Listener
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~{.java}
+```java
 toggleButton.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener()
 	{
 		@Override
@@ -77,7 +77,7 @@ toggleButton.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListen
 			}
 		}
 	});
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+```
 
 
 # Implements
@@ -88,7 +88,7 @@ toggleButton.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListen
 # Arrays
 ## The hipster of code
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~{.java}
+```java
 private int [] myScores;
 myScores = new int [5];
 myScores[0] = 1111117;
@@ -97,7 +97,7 @@ myScores.length; // 5
 
 String [] myWords;
 myWords = new String [10];
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
+```
 
 * Array size required in advance
 * Inline deceleration `int [] scores = {17, 101, 39, 45, 3};`
