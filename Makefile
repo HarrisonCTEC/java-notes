@@ -1,3 +1,7 @@
+md=$(wildcard *.md)
+
 all: pdf
 
-pdf: ; pandoc java-notes.md --latex-engine=xelatex -V geometry:"margin=1in" -o java-notes.pdf ; pandoc swift-notes.md --latex-engine=xelatex -V geometry:"margin=1in" -o swift-notes.pdf
+pdf: $(md)
+	for mdFile in $^ ; do \
+		pandoc $$mdFile --latex-engine=xelatex -V geometry:"margin=1in" -o $(mdFile:md=pdf)
