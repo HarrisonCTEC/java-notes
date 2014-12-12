@@ -56,3 +56,6 @@ for currentSuit in PlayingCard.validSuits()
   }
 }
 ```
+
+# App Delegate
+* Controls the running of an iOS application
