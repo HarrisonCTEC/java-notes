@@ -1,8 +1,8 @@
 cache:
   apt: true
-  cabal: true
   directories:
   - ~/pandoc
+  - ~/.cabal
 
 install:
 - cd ~
@@ -15,10 +15,10 @@ install:
 - cabal install --only-dependencies pandoc
 - cabal install
 - PATH=$HOME/.cabal/bin:$PATH
-- cd ~/notes/
 
 before_script:
 - pandoc -v
+- cd ~/HarrisonCTEC/notes/
 
 script: make
 
