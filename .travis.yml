@@ -1,14 +1,21 @@
+cache:
+  apt: true
+  cabal: true
+  directories:
+  - ~/pandoc
+
 install:
+- cd ~
 - sudo apt-get update
 - sudo apt-get install haskell-platform texlive texlive-xetex texlive-latex-extra
-- git clone "https://github.com/jgm/pandoc.git"
+- git clone "https://github.com/jgm/pandoc.git" || git pull pandoc
 - cd pandoc
 - git submodule update --init data/templates/
 - cabal update
 - cabal install --only-dependencies pandoc
 - cabal install
 - PATH=$HOME/.cabal/bin:$PATH
-- cd ..
+- cd ~/notes/
 
 before_script:
 - pandoc -v
@@ -20,7 +27,7 @@ deploy:
   skip_cleanup: true
   api_key:
     secure: GCdvpv99K+v9fC+8nsYqIc+CoHvQBupavQKyDA2qv/qVQ+StJvE58gkAyZxsa+U8p5L00bigqShtpgvyoGnZlPvPB71SHhrnx5GM0cy3UuP8EoRqvzqpVb7/mSwTfEBKR5LkJUqIYYEhoiUsXoGjETsVk69E2O16dz03UXMk/PI=
-  file: 
+  file:
   - java-notes.pdf
   - swift-notes.pdf
   on:
