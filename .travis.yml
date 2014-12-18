@@ -1,11 +1,10 @@
 cache:
   apt: true
   directories:
-  - ~/pandoc
+  - pandoc
   - ~/.cabal
 
 install:
-- cd ~
 - sudo apt-get update
 - sudo apt-get install haskell-platform texlive texlive-xetex texlive-latex-extra
 - git clone "https://github.com/jgm/pandoc.git" || git pull pandoc
@@ -14,11 +13,11 @@ install:
 - cabal update
 - cabal install --only-dependencies pandoc
 - cabal install
+- cd ..
 - PATH=$HOME/.cabal/bin:$PATH
 
 before_script:
 - pandoc -v
-- cd ~/HarrisonCTEC/notes/
 
 script: make
 
