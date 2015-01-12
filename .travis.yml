@@ -1,20 +1,9 @@
 cache:
-  apt: true
-  directories:
-  - pandoc
-  - ~/.cabal
+  - apt
 
 install:
-#- sudo apt-get update
-#- sudo apt-get install haskell-platform texlive texlive-xetex texlive-latex-extra
-#- git clone "https://github.com/jgm/pandoc.git" || git pull pandoc
-#- cd pandoc
-#- git submodule update --init data/templates/
-#- cabal update
-#- cabal install --only-dependencies pandoc
-#- cabal install
-#- cd ..
-#- PATH=$HOME/.cabal/bin:$PATH
+- sudo apt-get update
+- sudo apt-get install texlive texlive-xetex
 - wget "https://github.com/jgm/pandoc/releases/download/1.13.2/pandoc-1.13.2-1-amd64.deb"
 - sudo dpkg -i "pandoc-1.13.2-1-amd64.deb"
 
