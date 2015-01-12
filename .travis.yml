@@ -1,5 +1,4 @@
-cache:
-  - apt
+cache: apt
 
 install:
 - sudo apt-get update
@@ -7,8 +6,7 @@ install:
 - wget "https://github.com/jgm/pandoc/releases/download/1.13.2/pandoc-1.13.2-1-amd64.deb"
 - sudo dpkg -i "pandoc-1.13.2-1-amd64.deb"
 
-before_script:
-- pandoc -v
+before_script: pandoc -v
 
 script: make
 
