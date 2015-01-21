@@ -1,14 +1,12 @@
-cache:
-  - apt
+cache: apt
 
 install:
 - sudo apt-get update
 - sudo apt-get install texlive texlive-xetex texlive-latex-extra
-- wget "https://github.com/jgm/pandoc/releases/download/1.13.2/pandoc-1.13.2-1-amd64.deb"
-- sudo dpkg -i "pandoc-1.13.2-1-amd64.deb"
+- wget -O "pandoc.deb" "https://github.com/jgm/pandoc/releases/download/1.13.2/pandoc-1.13.2-1-amd64.deb"
+- sudo dpkg -i "pandoc.deb"
 
-before_script:
-- pandoc -v
+before_script: pandoc -v
 
 script: make
 
