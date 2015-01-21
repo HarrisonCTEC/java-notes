@@ -20,6 +20,7 @@ deploy:
   file:
   - java-notes.pdf
   - swift-notes.pdf
+  - database-notes.pdf
   on:
     tags: true
     all_branches: true
